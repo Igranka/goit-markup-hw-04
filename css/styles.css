@@ -440,6 +440,10 @@ button:focus {
     margin-right: 120px;
 }
 
+.footer-main {
+    margin-right: 120px;
+}
+
 .footer .logo {
     display: inline-block;
     margin-bottom: 16px;
@@ -472,6 +476,11 @@ button:focus {
     gap: 16px;
     margin-left: 16px;
     margin-right: 16px;
+}
+
+.social-account {
+    width: 40px;
+    height: 40px;
 }
 
 .corporate-social-box {
