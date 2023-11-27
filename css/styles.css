@@ -86,8 +86,25 @@ header .container {
     gap: 40px;
 }
 
-.nav-page {
-    position: relative;
+.nav-main-element {
+    /* text */
+    color: #2e2f42;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    /* object location and geometry */
+    width: calc((100% - 2*40px)/3);
+    padding: 24px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-main-element:hover,
+.nav-main-element:focus {
+    color:#404BBF;
 }
 
 .nav-page::after {
@@ -106,24 +123,6 @@ header .container {
 .nav-page:hover::after,
 .nav-page:focus::after {
     background-color: #404BBF;
-}
-
-.nav-main-element {
-    color: #2e2f42;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    width: calc((100% - 2*40px)/3);
-    padding: 24px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.nav-main-element:hover,
-.nav-main-element:focus {
-    color:#404BBF;
 }
 
 .address-main-menu {
@@ -316,6 +315,11 @@ button:focus {
     justify-content: center;
 }
 
+.team-member-account {
+    width: 40px;
+    height: 40px;
+}
+
 .social-box {
     display: flex;
     position: relative;
@@ -328,7 +332,8 @@ button:focus {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-member:hover .social-box {
+.social-box:hover,
+.social-box:focus {
     background-color: #404BBF;
 }
 
@@ -337,6 +342,7 @@ button:focus {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    fill: #f4f4fd;
     
     flex-basis: 16px;
     height: 16px;
